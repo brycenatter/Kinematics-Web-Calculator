@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <meta http-equiv='content-type' content='text/html;charset=utf-8' />
+    <meta name="viewport" content="initial-scale=1.0">
     <title>Kinematic Equation Solver</title>
     <script type='text/javascript' src='main.js'></script>
   </head>
 
   <body onload="onLoad()">
-
+<!---
     <h1>Kinematic Equation Solver</h1>
     <h3>Please don't include units. It breaks everything and I don't feel like fixing it.</h3>
-
-    <table id="inputs">
+-->
+    <table id="inputs" width="100%">
       <tr>
         <td>Velcoity (Final):</td>
       </tr>
@@ -58,18 +59,19 @@
       </tr>
 
       <tr>
-        <td><input type="text" id="f" class="inputBox" name="f"></td>
+        <td><input type="text" id="f" class="inputBox" name="f"><br></td>
       </tr>
 
       <tr>
-        <td><button onclick="onSumbit()">Calculate</button></td>
+        <td><p id="s">s = </p><p id="answer"></p></td>
+      </tr>
+      
+      <tr>
+        <td><button id="submitButton" onclick="onSumbit()">Calculate</button></td>
       </tr>
 
     </table>
-    <p>
-        s = 
-    </p>
-    <p id="answer"></p>
+    
   </body>
 
 </html>

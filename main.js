@@ -79,19 +79,19 @@ function function4(a, b, c, e, f) {
 
 
 function run(a, b, c, d, e, f){
-    if (e == "n") {
+    if (e == "") {
         return function1(a, b, c, d);
     }
-    if (f == "n") {
+    if (f == "") {
         return function1(a, b, c, d);
     }
-    if (c == "n") {
+    if (c == "") {
         return function2(a, b, d, e, f)
     }
-    if (a == "n"){
+    if (a == ""){
         return function3(b, c, d, e, f)
     }
-    if (d == "n"){
+    if (d == ""){
         return function4(a, b, c, e, f)
     }
 };
