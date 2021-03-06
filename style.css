@@ -1,0 +1,12 @@
+#inputs {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+.inputBox{
+    padding:8px;
+    display:block;
+    border:1px solid #ccc;
+    width:80%;
+}

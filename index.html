@@ -1,39 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv='content-type' content='text/html;charset=utf-8' />
-        <title>Kinamatic Equation Solver</title>
-        <script type='text/javascript' src='main.js'></script>
-      </head>
-<body onload="onLoad()">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv='content-type' content='text/html;charset=utf-8' />
+    <title>Kinematic Equation Solver</title>
+    <script type='text/javascript' src='main.js'></script>
+  </head>
 
-<h1>Kinamatic Equation Solver</h1>
-<h3>Please don't include units. It breaks everything and I don't feel like fixing it.</h3>
-Velcoity (Final):
-  <input type="text" id="a" name="a"><br><br>
-Velcoity (Inital):
-  <input type="text" id="b" name="b"><br><br>
+  <body onload="onLoad()">
 
-  Acceleration:
-  <input type="text" id="c" name="c"><br><br>
-  
-Time:
-  <input type="text" id="d" name="d"><br><br>
+    <h1>Kinematic Equation Solver</h1>
+    <h3>Please don't include units. It breaks everything and I don't feel like fixing it.</h3>
 
-Position (Final):
-  <input type="text" id="e" name="e"><br><br>
+    <table id="inputs">
+      <tr>
+        <td>Velcoity (Final):</td>
+      </tr>
+      
+      <tr>
+        <td><input type="text" id="a" class="inputBox" name="a"></td>
+      </tr>
 
- Position (Inital):
-  <input type="text" id="f" name="f"><br><br>
-  
-  <button onclick="onSumbit()">Calculate</button>
+      <tr>
+        <td>Velcoity (Inital):</td>
+      </tr>
 
+      <tr>
+        <td><input type="text" id="b" class="inputBox" name="b"></td>
+      </tr>
 
-<p>
-    s = 
-</p>
-<p id="answer"></p>
+      <tr>
+        <td>Acceleration:</td>
+      </tr>
 
-</body>
+      <tr>
+        <td><input type="text" id="c" class="inputBox" name="c"></td>
+      </tr>
+
+      <tr>
+        <td>Time:</td>
+      </tr>
+
+      <tr>
+        <td><input type="text" id="d" class="inputBox" name="d"></td>
+      </tr>
+      
+      <tr>
+        <td>Position (Final):</td>
+      </tr>
+
+      <tr>
+        <td><input type="text" id="e" class="inputBox" name="e"></td>
+      </tr>
+    
+      <tr>
+        <td>Position (Inital):</td>
+      </tr>
+
+      <tr>
+        <td><input type="text" id="f" class="inputBox" name="f"></td>
+      </tr>
+
+      <tr>
+        <td><button onclick="onSumbit()">Calculate</button></td>
+      </tr>
+
+    </table>
+    <p>
+        s = 
+    </p>
+    <p id="answer"></p>
+  </body>
+
 </html>
 
