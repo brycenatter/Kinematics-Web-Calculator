@@ -79,6 +79,9 @@ function function4(a, b, c, e, f) {
 
 
 function run(a, b, c, d, e, f){
+    if (a == ""){
+        return function3(b, c, d, e, f);
+    }
     if (e == "") {
         return function1(a, b, c, d);
     }
@@ -86,13 +89,10 @@ function run(a, b, c, d, e, f){
         return function1(a, b, c, d);
     }
     if (c == "") {
-        return function2(a, b, d, e, f)
-    }
-    if (a == ""){
-        return function3(b, c, d, e, f)
+        return function2(a, b, d, e, f);
     }
     if (d == ""){
-        return function4(a, b, c, e, f)
+        return function4(a, b, c, e, f);
     }
 };
 
@@ -115,3 +115,4 @@ function onSumbit(){
 function onLoad(){
     console.log("Why are you looking at the console? Get out of here and use the website like a normal person.");
 };
+
